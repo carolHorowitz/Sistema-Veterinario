@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Dados, Prontuario
 
-# Register your models here.
+admin.site.register(Dados)
+admin.site.register(Prontuario)
