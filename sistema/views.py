@@ -5,6 +5,6 @@ def index(request):
     return HttpResponse("Bem vindo ao sistema veterinário")
 
 def cadastro(request):
-    return HttpResponse("página de cadastro")
+    return HttpResponse("Página de cadastro")
 
 
