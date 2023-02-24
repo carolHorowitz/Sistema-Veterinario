@@ -11,11 +11,17 @@ class Dados (models.Model):
     
     class Meta:
         verbose_name = 'Dado'
+        
+    def __str__(self):
+        return self.nome_tutor   
     
 class Prontuario (models.Model):
     anotacoes = models.CharField(max_length = 10000)
     data_retorno = models.DateField()
     
     class Meta:
-        verbose_name = 'Prontuario'    
+        verbose_name = 'Prontuario' 
+        
+    def __str__(self):
+        return self.nome_tutor       
     
