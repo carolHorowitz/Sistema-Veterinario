@@ -23,5 +23,13 @@ class Prontuario (models.Model):
         verbose_name = 'Prontuario' 
         
     def __str__(self):
-        return self.nome_tutor       
+        return self.nome_tutor
+    
+class Usuario (models.Model):
+    nome = models.CharField(max_length=30)
+    email = models.EmailField() 
+    senha = models.CharField(max_length=64)
+     
+    def __str__ (self):
+        return self.nome        
     
