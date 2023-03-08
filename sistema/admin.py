@@ -3,4 +3,8 @@ from .models import Dados, Prontuario, Usuario
 
 admin.site.register(Dados)
 admin.site.register(Prontuario)
-admin.site.register(Usuario)
+
+
+@admin.register(Usuario)
+class UsuarioAdmin (admin.ModelAdmin):
+    readonly_fields = ('nome', 'email', 'senha')
