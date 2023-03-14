@@ -6,6 +6,13 @@
 
 <div class="container">
     <br>
+
+    {% if status == '1' %}
+       <div class="alert alert-danger" role="alert">
+          Sua senha não pode ter menos de 6 dígitos!
+       </div> 
+
+    {% endif %}     
     <div class="row">
 
         <div class="col-md-3">
